@@ -1,35 +1,51 @@
 * {
-  box-sizing: border-box;
+  font-family: 'Alice';
+  border-radius: 10px;
+  color: black;
 }
 
 body {
-  background-color: #F9EADA;
-  padding: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  background-color: #6d614b !important;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+footer>h2 {
+  background: rgb(27, 26, 26);
+  color: white;
+}
+
+/* Acima é o CSS modelo, abaixo do comentário é sobre Home */
+
+.card {
+  background-color: #7c715b !important;
 }
 
 .carousel {
-  display: inline-block;
+  display: flex;
   overflow: hidden;
-  height: 350px;
-  width: 400px;
+  height: 500px;
+  width: 600px;
+  margin: 0 auto !important;
 }
 
 .container {
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   display: flex;
   transition: transform 0.5s linear;
   transform: translateX(0);
-
 }
 
 .img {
   object-fit: cover;
-  width: 100%;
-  height: 80%;
+  width: 600px;
+  height: 100%;
   border-radius: 30px;
-
 }
 
 /* nav bar */
@@ -38,7 +54,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(27, 26, 26);
 }
 
 /* nav bar */
@@ -53,6 +69,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: rgb(27, 26, 26);
 }
 
 /* nav bar */
@@ -65,54 +82,17 @@ li a:hover:not(.active) {
   ;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+/* Abaixo haverá o CSS da página Atividades & Metas */
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #97886B;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: white;
-  width: 100%;
-  padding: 10px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: #97886B;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 10px;
+.centerlize {
+  margin: 0 auto !important;
   text-align: center;
-  background: #050505;
-  margin-top: 20px;
+}
+
+progress,
+::-webkit-progress-value {
+  width: 500px;
+  background-color: aqua;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

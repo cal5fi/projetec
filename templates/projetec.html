@@ -1,0 +1,39 @@
+{% extends 'baseProjetec.html' %}
+{% block conteudo %}
+
+<!-- Falta colocar as imagens do lado direito e o parágrafo do lado esquerdo e também padronizar o tamanho das imagens-->
+
+<div class="card">
+  <h2>Sobre a Igreja</h2>
+
+  <div class="carousel">
+
+    <div class="container" id="img">
+      <img class="img" src="{{ url_for('static', filename='images/igreja.jpg') }}"
+        alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+      <img class="img" src="{{ url_for('static', filename='images/igreja-nossa-senhora.jpg') }}"
+        alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+      <img class="img" src="{{ url_for('static', filename='images/iNS.jpeg') }}"
+        alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+      <img class="img" src="{{ url_for('static', filename='images/iNS2.jpg') }}"
+        alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+    </div>
+
+  </div>
+  <p>Some text asjdiahsdui9hasfihfoiashfoasdoihg oiauybr8sys89ymnarp,svjpr..</p>
+
+  <p>Some text..</p>
+  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco.</p>
+</div>
+
+<div class="card">
+  <h2>História</h2>
+  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco.</p>
+</div>
+
+
+{% endblock %}

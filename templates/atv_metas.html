@@ -1,0 +1,37 @@
+{% extends 'baseProjetec.html' %}
+{% block conteudo %}
+
+<h1 class="centerlize"> ACREDITE, VOCÊ FAZ A DIFERENÇA!</h1>
+<h2 class="centerlize"> ~Participe das Atividades!~</h2>
+
+<h3 style="margin-left: 50px"> Atividade Atual: {{ atividade }} </h3>
+
+<div class="carousel">
+
+    <div class="container" id="img">
+        <img class="img" src="{{ url_for('static', filename='images/igreja.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/igreja-nossa-senhora.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/iNS.jpeg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/iNS2.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+    </div>
+
+</div>
+
+<h3 style="margin-left: 50px"> Principal meta: {{ meta }} </h3>
+<p style="margin-left: 50px">{{ texto_meta }}</p>
+
+
+<!-- Fazer JS para alterar a barra de acordo com o progresso da meta-->
+<div class="centerlize">
+    <label for="donate">Barra de arrecadações</label> <br>
+    <progress id="donate" value="78" max="100"> </progress>
+    <p> A arrecadação para finalidade: "[[alterar]]" está sendo feita na Igreja Matriz de Nossa Senhora do Bom Sucesso
+        das 00:00h até 00:01h. Agradeceços a colaboração de todos!</p>
+</div>
+
+
+{% endblock %}
