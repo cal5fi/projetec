@@ -1,0 +1,59 @@
+JAVASCRIPT:
+
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function carrosel() {
+    idx++;
+
+    if (idx > img.length - 1) {
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 100}%)`;
+}
+
+setInterval(carrosel, 3500);
+
+
+{% block carousel %}
+<div class="carousel">
+    <div class="container" id="img">
+        <img class="img" src="{{ url_for('static', filename='images/f1.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f2.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <div>
+            <img class="img" src="{{ url_for('static', filename='images/f3.jpg') }}"
+                alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        </div>
+        <div>
+            <img class="img" src="{{ url_for('static', filename='images/f4.jpg') }}"
+                alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        </div>
+        <img class="img" src="{{ url_for('static', filename='images/f6.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f7.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f8.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f9.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f10.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f12.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f13.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f14.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+        <img class="img" src="{{ url_for('static', filename='images/f15.jpg') }}"
+            alt="fotos da Igreja Nossa Senhora do Bom Sucesso">
+    </div>
+</div>
+
+{% endblock %}
+
+
