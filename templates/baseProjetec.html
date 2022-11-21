@@ -19,6 +19,17 @@
             <li><a href="/atv_metas">Atividades & Metas</a></li>
             <li><a href="#contact">Sugestões</a></li>
             <li><a href="#about">Quem Somos</a></li>
+
+            <div class="float-end text-end mr-1 text-light">
+                {% if 'usuario_nome' in session %}
+                <form action="{{ url_for('logout') }}" method="post">
+                    <div class="logar">Olá, {{ session['usuario_nome'] }}!</div>
+                    <button class="logar">Sair</button>
+                </form>
+                {% else %}
+                <div><a href="{{ url_for('login') }}" class="logar">Login</a></div>
+                {% endif %}
+            </div>
         </ul>
 
         {% block conteudo %}
